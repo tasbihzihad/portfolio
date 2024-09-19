@@ -1,0 +1,547 @@
+/*==========================================================
+Tamplate Name: Paul Lapkin - Portfolio
+Template URL:
+Author: Zihad
+Author URL: zihad.me
+Support: zihad@gmail.com
+Version: 1.o
+=====================================*/
+
+/*==========================================================
+
+  CSS index
+  =========
+
+  1. COMMON CSS
+  2.HERO
+  3.ABOUT
+  4.WORKING
+  5.EXPERIECNE
+  6.PORTFOLIO
+  7.TESTIMONIAL
+  8.CONTACT
+  9.FOOTER
+
+==========================================================*/
+
+/*==========================================================
+
+  1. COMMON CSS
+
+==========================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Roboto:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  background: #fff;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+}
+a, a:hover{
+  text-decoration: none;
+}
+
+p{
+  margin-top: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Railway', sans-serif;
+  margin-top: 0;
+  font-weight: 700;
+
+}
+
+h1{
+  
+  font-weight: 700;
+  font-size: 650%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+h2{
+  font-size: 400%;
+}
+
+h4{
+  font-size: 160%;
+}
+
+h3{
+  font-size: 260%;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+ul li{
+  list-style: none;
+}
+
+/* REISUABLE COMPONENT */
+
+.row{
+  max-width: 1180px;
+  margin: auto;
+}
+
+section{
+  padding: 120px 0;
+}
+
+.btn:link, .btn:visited, .btn{
+  width: 203px;
+  background: #ff2b4a;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-size: 160%;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: 2px solid #ff2b4a;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.btn:hover, .btn:active{
+  background: transparent;
+  color: #ff2b4a;
+}
+
+.section-title{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+p{
+  font-size: 16px;
+  color: #6f6f6f;
+  margin-top: 20px;
+}
+
+/*==========================================================
+
+  2. HERO
+
+==========================================================*/
+
+#hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/bd2.jpg) no-repeat center / cover;
+  
+}
+
+
+.logo{
+  float: left;
+  height: 45px;
+  margin-top: 45px;
+  
+}
+
+.nav-icon{
+  color: #fff;
+  float: right;
+  margin-top: 45px;
+}
+
+.nav-icon ion-icon{
+  font-size: 400%;
+  border: solid #fff;
+}
+
+
+
+.hero-text-box{
+  width: 1180px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1::before{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+}
+
+h1::after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+}
+
+.hero-text-box span{
+  font-size: 230%;
+  color: #fff;
+  display: block;
+  margin-top: 20px;
+}
+
+
+/*==========================================================
+
+  3. ABOUT
+
+==========================================================*/
+
+.grid-about-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 60px;
+}
+
+.zihad{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.intro{
+  font-size: 200%;
+  color: #222222;
+  font-weight: 700;
+}
+
+.describtion{
+  font-size: 160%;
+  color: #222;
+  margin: 30px 0;
+  width: 90%;
+}
+
+.grid-about-items{
+  margin-top: 100px;
+  padding-left: 40px;
+}
+
+/*==========================================================
+
+  4. WORKING
+
+==========================================================*/
+
+#process{
+  background: #f6f6f6;
+}
+
+.grid-process-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap:20px;
+  color: #fff;
+  text-align: center;
+}
+
+.grid-process-item{
+  padding: 80px 0;
+}
+
+.grid-process-item:nth-child(1){
+  background: #27d4ff;
+}
+
+.grid-process-item:nth-child(2){
+  background: #c227ff;
+}
+
+.grid-process-item:nth-child(3){
+  background: #08022e;
+}
+
+.grid-process-item:nth-child(4){
+  background: #db113d;
+}
+
+.grid-process-item ion-icon{
+  font-size: 400%;
+  margin-bottom: 30px;
+}
+
+.grid-process-item h4{
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*==========================================================
+
+  5.EXPERIENCE
+
+==========================================================*/
+
+#experience{
+  background: url(img/bg3.jpg) no-repeat center / cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+.grid-experience-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid-experience-item, .grid-education-item{
+  background: rgba(0, 0, 0, 0.8);
+  padding: 45px 30px;
+}
+
+.job h4, .education h4{
+  font-size: 180%;
+  color: #fff;
+}
+
+.job span, .education span{
+  font-size: 160%;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.job p, .education p{
+  font-size: 160%;
+  color: #fff;
+}
+
+#experience hr, .education hr{
+  border: 0;
+  border-bottom: 1px solid #fff;
+  margin: 30px 0;
+}
+
+/*==========================================================
+
+  6.PORTFOLIO
+
+==========================================================*/
+
+.grid-portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(250px, auto);
+}
+
+
+.grid-portfolio-item:nth-child(2){
+  background: url(img/2.jpg) no-repeat center / cover;
+}
+.grid-portfolio-item:nth-child(3){
+  background: url(img/3.jpg) no-repeat center / cover;
+}
+.grid-portfolio-item:nth-child(4){
+  background: url(img/4.jpg) no-repeat center / cover;
+}
+
+.grid-portfolio-item:nth-child(5){
+  grid-column: 1/3;
+
+}
+
+.grid-portfolio-item:nth-child(6){
+  background: url(img/6.jpg) no-repeat / cover;
+}
+.grid-portfolio-item:nth-child(7){
+  background: url(img/7.jpg) no-repeat / cover;
+}
+
+
+.uk-lightbox-toolbar{
+  font-size: 160%;
+}
+
+.uk-lightbox{
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-filter{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-filter button{
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background: #000;
+  color: #fff;
+  font-size: 160%;
+  margin: 0 5px;
+}
+
+.portfolio-filter button:hover{
+  cursor: pointer;
+  background: #db113d;
+  border: 1px solid #db113d;
+}
+
+/*==========================================================
+
+  6.TESTIMONIAL
+
+==========================================================*/
+
+#testimonial{
+  background: url(img/ab.jpg) no-repeat center / cover;
+}
+
+.grid-testimonial-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.quote img{
+  height: 35px;
+}
+
+#testimonial p{
+  margin: 45px 0;
+  font-size: 160%;
+  color: #000;
+}
+
+.signeture{
+  margin-bottom: 15px;
+}
+
+.signeture img{
+  height: 45px;
+}
+
+#testimonial span{
+  font-size: 140%;
+}
+
+/*==========================================================
+
+  7.CONTACT
+
+==========================================================*/
+
+#contact{
+  background: url(img/cnt.png) no-repeat center / cover;
+  background-attachment: fixed;
+}
+
+.grid-contact-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid-contact-item:nth-child(1){
+  background: #1d1d1d7a;
+  padding: 45px 30px;
+}
+
+::placeholder{
+  color: #fff;
+}
+
+.single-form input[type="text"],
+.single-form input[type="email"],
+.single-form textarea{
+  width: 100%;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 140%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.single-form-btn{
+  text-align: left;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.nested-grid-contact-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+}
+.nested-grid-contact-item{
+  background: #1d1d1d7a;
+  padding: 45px 30px;
+}
+
+.nested-grid-contact-item p{
+  font-size: 160%;
+  color: #fff;
+}
+
+/*==========================================================
+
+  7.FOOTER
+
+==========================================================*/
+
+#footer{
+  background: #222;
+  padding: 40px 0;
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+}
+
+
+.social-icon ul li a ion-icon{
+  color: #fff;
+  font-size: 200%;
+  padding: 0 10px;
+  border-right: 1px solid #fff;
+}
+
+
+.copyright{
+  color: #ffff;
+  font-size: 140%;
+  margin-top: 10px;
+}
+
+.totop{
+  margin-top: 25px;
+}
+
+.totop .uk-totop{
+  padding: 10px 6px;
+  color: #fff;
+  transition: .5s;
+  border: 1px solid #fff;
+}
+
+.totop .uk-totop:hover{
+  background: #fff;
+  color: #000;
+}
